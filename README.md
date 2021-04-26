@@ -1,3 +1,3 @@
 # Quantitative-Risk-Management
 
-This is a test again
+A repository for practicing concepts from Quantitative Financial Risk Management using R.
