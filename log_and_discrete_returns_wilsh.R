@@ -6,15 +6,16 @@ names(wilsh) <- "TR"
 
 head(wilsh, 3)
 
-logret <- diff(log(wilsh$TR))[-1]
+logret <- diff(log(wilsh$TR))[-1] #log returns
 round(head(logret, 3),6)
 
-ret <- exp(logret)-1
+ret <- exp(logret)-1 #discrete returns
 round(head(ret, 3),6)
 
 plot(ret)
 plot(logret)
 
+#weekly returns
 logret_w <- apply.weekly(wilsh, sum)
 round(head(logret_w ,3), 6)
 
